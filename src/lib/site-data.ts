@@ -11,6 +11,8 @@ export type GuideSection = {
     src: string;
     alt: string;
     caption: string;
+    width?: number;
+    height?: number;
   };
 };
 
@@ -119,6 +121,98 @@ const guideItems: Guide[] = [
         body: [
           "不要只说帮我优化一下页面。这类指令太宽泛，结果容易发散。",
           "不要忽略验证环节。没有构建、测试或手工检查的修改，只能算半完成。",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "codex-toolkit-api-history-sync",
+    title: "低成本用上 Codex App：一键配置 API 与同步历史消息",
+    description: "用 Codex Toolkit 管理本地 Codex 配置，快速接入自备 API 地址，并在切换 provider 后同步历史会话。适合想少折腾、低成本体验 Codex App 的用户。",
+    category: "实战",
+    readingTime: "5 分钟",
+    publishedAt: "2026-05-31",
+    sections: [
+      {
+        title: "这篇解决什么问题",
+        body: [
+          "Codex App 的体验很顺手：能读项目、改文件、跑命令，也能把任务推进到可检查的结果。但对新手来说，真正卡住的地方往往不是怎么提需求，而是怎么把 API 地址配置好、怎么在切换模型服务后继续看到历史会话。",
+          "Codex Toolkit 做的事情很明确：把这些本地配置动作做成图形界面，让你不用手动编辑配置文件，也能更稳地接入自备 API 服务。",
+        ],
+        image: {
+          src: "/images/guides/codex-toolkit/usage-overview.svg",
+          alt: "Codex Toolkit 主界面截图",
+          caption: "Codex Toolkit 会读取本地 Codex 会话和配置状态，并提供可视化管理入口。",
+          width: 444,
+          height: 620,
+        },
+      },
+      {
+        title: "一键配置 API 地址",
+        body: [
+          "以前想让 Codex App 使用自定义 API 地址，通常要手动修改本地 config.toml。对熟悉配置文件的人来说不难，但对刚开始使用 Codex 的用户来说，写错字段、漏掉 provider、忘记重启 App，都会造成额外排查成本。",
+          "Codex Toolkit 把这一步变成了表单：填写 Provider ID、API Base URL、API Key，点击应用配置，就可以写入 Codex 的本地配置。工具会在写入前备份旧配置，方便出现问题时回退。",
+        ],
+        steps: [
+          "打开 Codex Toolkit 的 API 配置页面。",
+          "填写你的 API Base URL、API Key 和 Provider ID。",
+          "点击应用配置，并按提示重启 Codex App。",
+        ],
+        image: {
+          src: "/images/guides/codex-toolkit/api-config.svg",
+          alt: "Codex Toolkit API 配置界面截图",
+          caption: "在图形界面里配置 API 地址，比手动改 config.toml 更适合新手。",
+          width: 444,
+          height: 620,
+        },
+      },
+      {
+        title: "为什么要同步历史消息",
+        body: [
+          "Codex 的本地历史会记录 provider 信息。当你从官方线路切换到自备 API，或者从一个模型服务切换到另一个模型服务后，历史会话可能因为 provider 不一致而显示异常。",
+          "历史同步功能会读取本地 sessions、archived_sessions 和 SQLite 状态库，把旧会话同步到当前 provider。这样做的目标不是改写对话内容，而是尽量恢复历史会话入口，减少切换服务后的割裂感。",
+        ],
+        note: "如果某些历史内容包含原 provider 的 encrypted_content，同步后可能只能恢复列表可见，继续打开时仍可能受原 provider 的加密机制影响。重要历史同步前建议确认备份。",
+      },
+      {
+        title: "适合哪些用户",
+        body: [
+          "这个工具适合想低成本体验 Codex App 的用户，尤其是 Codex Free 用户、想接入国产模型或兼容 OpenAI 接口模型的用户，以及不想手动编辑本地配置文件的新手。",
+          "它不是破解工具，也不是绕过平台规则的工具。它只是帮你管理本机 Codex 配置，并接入你自己准备的 API 服务。",
+        ],
+        steps: [
+          "轻量体验：可以先用自备 API 地址跑通 Codex App 工作流。",
+          "日常开发：可以把常用 provider 配好，减少重复配置成本。",
+          "重度使用：仍建议选择稳定、合规的官方或付费方案。",
+        ],
+      },
+      {
+        title: "推荐使用流程",
+        body: [
+          "最稳的流程是先确认 Codex App 本身能正常打开，再用 Codex Toolkit 写入 API 配置，最后按需同步历史消息。不要一上来同时改多个 provider，也不要在没有备份意识的情况下反复切换。",
+          "如果你只是想快速体验，先配置一个可用的 API 地址，打开一个小项目，让 Codex 完成一个低风险任务，例如修改文案、补 README 或运行一次检查。确认流程顺畅后，再把它接入更正式的开发任务。",
+        ],
+        steps: [
+          "启动 Codex Toolkit。",
+          "填写 API 地址和 Key。",
+          "应用配置并重启 Codex App。",
+          "打开一个真实项目做小任务验证。",
+          "需要时再同步历史会话。",
+        ],
+        image: {
+          src: "/images/guides/codex-toolkit/history-sync.svg",
+          alt: "Codex Toolkit 历史同步界面截图",
+          caption: "建议先跑通最小流程，再处理历史同步和长期使用配置。",
+          width: 444,
+          height: 620,
+        },
+      },
+      {
+        title: "最后怎么选",
+        body: [
+          "如果你只是轻量使用，或者想先体验 Codex App 的项目工作流，Codex Toolkit 可以帮你更低成本地开始。它把 API 配置和历史同步这两件容易劝退新手的事，收进了一个本地工具里。",
+          "如果你是高频开发者、团队用户，或者希望获得更稳定完整的官方体验，仍然建议开通 Pro 等官方套餐，并按要求完成必要验证。工具可以降低折腾成本，但长期生产使用更应该优先考虑稳定性和合规性。",
+          "需要工具的朋友，可以添加小编获取。",
         ],
       },
     ],
@@ -991,6 +1085,7 @@ const guideLearningOrder = [
   "what-is-codex",
   "codex-desktop-app-installation",
   "getting-started",
+  "codex-toolkit-api-history-sync",
   "codex-app-x-article-yichen",
   "most-useful-slash-commands",
   "built-in-commands",

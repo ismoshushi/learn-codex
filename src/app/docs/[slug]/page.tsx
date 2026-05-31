@@ -146,8 +146,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 <Image
                   src={section.image.src}
                   alt={section.image.alt}
-                  width={1400}
-                  height={900}
+                  width={section.image.width ?? 1400}
+                  height={section.image.height ?? 900}
                   className="h-auto w-full"
                 />
                 <figcaption className="border-t border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-600">

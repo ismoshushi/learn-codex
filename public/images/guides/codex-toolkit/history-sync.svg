@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="444" height="620" viewBox="0 0 444 620" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Toolkit history sync screen</title>
+  <desc id="desc">A dark Codex Toolkit history sync panel listing provider records and sync buttons.</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2b3d61"/>
+      <stop offset="1" stop-color="#07101d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#111c31"/>
+      <stop offset="1" stop-color="#091423"/>
+    </linearGradient>
+  </defs>
+  <rect width="444" height="620" rx="22" fill="#050b16"/>
+  <rect x="4" y="6" width="436" height="608" rx="22" fill="url(#shell)" stroke="#354a73"/>
+  <text x="25" y="42" fill="#fff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700">Codex Toolkit</text>
+  <text x="25" y="65" fill="#8fb0e9" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">刷新 下午11:11:11 | 事件 刚刚</text>
+  <circle cx="360" cy="43" r="17" fill="#0b1628"/>
+  <path d="M360 34v8m5-5a8 8 0 1 1-10 0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="402" cy="43" r="17" fill="#0b1628"/>
+  <path d="M402 35v3m0 10v3m8-8h-3m-10 0h-3m13.2-5.2-2.1 2.1m-7.2 7.2-2.1 2.1m11.4 0-2.1-2.1m-7.2-7.2-2.1-2.1" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="402" cy="43" r="4" fill="none" stroke="#fff" stroke-width="1.8"/>
+
+  <rect x="25" y="80" width="392" height="500" rx="24" fill="#0b1526" stroke="#273d61"/>
+  <text x="55" y="110" fill="#fff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="800">历史同步</text>
+  <text x="55" y="130" fill="#a8bbdb" font-family="Arial, sans-serif" font-size="13">moapi</text>
+
+  <rect x="55" y="142" width="327" height="117" rx="14" fill="url(#panel)" stroke="#284063"/>
+  <text x="68" y="168" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">Provider</text>
+  <text x="168" y="168" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="13" font-weight="800">moapi</text>
+  <text x="68" y="192" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">待同步文件</text>
+  <text x="168" y="192" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="13" font-weight="800">0</text>
+  <text x="68" y="216" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">待同步数据库行</text>
+  <text x="168" y="216" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="13" font-weight="800">3</text>
+  <text x="68" y="240" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">备份</text>
+  <text x="168" y="240" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="13" font-weight="800">4</text>
+
+  <text x="55" y="286" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13" font-weight="800">所有 Provider 记录</text>
+  <text x="269" y="286" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13" font-weight="800">总数 / 文件 / 数据库</text>
+
+  <rect x="55" y="301" width="327" height="37" rx="13" fill="#0f1a2b" stroke="#2b4265"/>
+  <text x="66" y="325" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="14" font-weight="800">moapi</text>
+  <rect x="149" y="310" width="34" height="19" rx="10" fill="#87a4ff"/>
+  <text x="156" y="324" fill="#fff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="11" font-weight="800">当前</text>
+  <text x="194" y="325" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="12">总数 130 | 文件 130 | 数据库 127</text>
+
+  <rect x="55" y="347" width="327" height="37" rx="13" fill="#0f1a2b" stroke="#2b4265"/>
+  <text x="66" y="371" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="14" font-weight="800">openai</text>
+  <text x="225" y="371" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="12">总数 2 | 文件 0 | 数据库 2</text>
+
+  <rect x="55" y="391" width="327" height="37" rx="13" fill="#0f1a2b" stroke="#2b4265"/>
+  <text x="66" y="415" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="14" font-weight="800">kgapi</text>
+  <text x="225" y="415" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="12">总数 1 | 文件 0 | 数据库 1</text>
+
+  <rect x="55" y="435" width="327" height="37" rx="13" fill="#0f1a2b" stroke="#2b4265"/>
+  <text x="66" y="459" fill="#eaf0fb" font-family="Arial, sans-serif" font-size="14" font-weight="800">songsongcard</text>
+  <text x="225" y="459" fill="#a8bbdb" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="12">总数 0 | 文件 0 | 数据库 0</text>
+
+  <rect x="55" y="481" width="327" height="39" rx="12" fill="#101b2d" stroke="#304666"/>
+  <text x="191" y="506" fill="#eff4ff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13" font-weight="800">刷新状态</text>
+  <rect x="55" y="529" width="327" height="40" rx="10" fill="#87a4ff"/>
+  <text x="191" y="555" fill="#fff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="14" font-weight="800">同步历史</text>
+
+  <rect x="410" y="361" width="7" height="134" rx="4" fill="#748097" opacity=".7"/>
+  <rect x="25" y="576" width="34" height="19" rx="9.5" fill="#809dff"/>
+  <circle cx="50" cy="585.5" r="8" fill="#fff"/>
+  <text x="72" y="592" fill="#fff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="800">日间/夜间</text>
+  <text x="363" y="592" fill="#fff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="15" font-weight="800">x  退出</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="444" height="620" viewBox="0 0 444 620" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Toolkit usage overview dashboard</title>
+  <desc id="desc">A dark Codex Toolkit dashboard showing refresh time, session path, token usage, recent event, scanned files, and day night switch.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#263757"/>
+      <stop offset="1" stop-color="#07101e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#122039"/>
+      <stop offset="1" stop-color="#0a1425"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020817" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="444" height="620" rx="22" fill="#050b16"/>
+  <rect x="4" y="6" width="436" height="608" rx="22" fill="url(#panel)" stroke="#34486f" filter="url(#shadow)"/>
+
+  <text x="25" y="42" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700">Codex Toolkit</text>
+  <text x="25" y="65" fill="#8fb0e9" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">刷新 下午11:10:26 | 事件 5 分钟前</text>
+
+  <circle cx="360" cy="43" r="17" fill="#0b1628"/>
+  <path d="M360 34v8m5-5a8 8 0 1 1-10 0" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="402" cy="43" r="17" fill="#0b1628"/>
+  <path d="M402 35v3m0 10v3m8-8h-3m-10 0h-3m13.2-5.2-2.1 2.1m-7.2 7.2-2.1 2.1m11.4 0-2.1-2.1m-7.2-7.2-2.1-2.1" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="402" cy="43" r="4" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+
+  <rect x="25" y="82" width="392" height="52" rx="17" fill="#0b1628" stroke="#263c62"/>
+  <rect x="39" y="94" width="80" height="27" rx="14" fill="#1c3a78"/>
+  <text x="61" y="113" fill="#d8e7ff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700">中转站</text>
+  <text x="128" y="113" fill="#c8d9ff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">...\sessions</text>
+  <path d="M384 105c7-6 13-6 19 0m-19 0c6 7 13 7 19 0m-15-4 11 11" fill="none" stroke="#80a7f8" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="25" y="147" width="177" height="7" rx="4" fill="#2c4270"/>
+  <rect x="234" y="147" width="177" height="7" rx="4" fill="#2c4270"/>
+  <text x="25" y="180" fill="#9bb9ef" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">剩余 100%，当前 0 小时窗口</text>
+  <text x="234" y="180" fill="#9bb9ef" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">本周剩余 100%</text>
+
+  <rect x="25" y="199" width="188" height="66" rx="16" fill="url(#card)" stroke="#284063"/>
+  <text x="38" y="225" fill="#91b2ec" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">中转站 会话 token</text>
+  <text x="38" y="249" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="17" font-weight="800">2.6M</text>
+
+  <rect x="223" y="199" width="188" height="66" rx="16" fill="url(#card)" stroke="#284063"/>
+  <text x="236" y="225" fill="#91b2ec" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">最近回复 token</text>
+  <text x="236" y="249" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="17" font-weight="800">79K</text>
+
+  <rect x="25" y="276" width="386" height="66" rx="16" fill="url(#card)" stroke="#284063"/>
+  <text x="38" y="301" fill="#91b2ec" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">最近使用事件</text>
+  <text x="38" y="326" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="800">5/31 23:05 (5 分钟前)</text>
+
+  <rect x="25" y="353" width="188" height="66" rx="16" fill="url(#card)" stroke="#284063"/>
+  <text x="38" y="379" fill="#91b2ec" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">上下文窗口</text>
+  <text x="38" y="403" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="17" font-weight="800">258K</text>
+
+  <rect x="223" y="353" width="188" height="66" rx="16" fill="url(#card)" stroke="#284063"/>
+  <text x="236" y="379" fill="#91b2ec" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">扫描文件</text>
+  <text x="236" y="403" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="17" font-weight="800">130</text>
+
+  <rect x="25" y="434" width="386" height="44" rx="16" fill="#142342" stroke="#284063"/>
+  <text x="39" y="463" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="800">详细 token 用量</text>
+  <text x="384" y="463" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="800">▲</text>
+
+  <rect x="25" y="495" width="386" height="114" rx="16" fill="#07111f" stroke="#243a5c"/>
+  <text x="39" y="526" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="800">会话总计</text>
+  <text x="315" y="526" fill="#a9c5f3" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13">总计 2,565,754</text>
+  <path d="M25 552h386" stroke="#263a5c"/>
+  <rect x="25" y="576" width="34" height="19" rx="9.5" fill="#809dff"/>
+  <circle cx="50" cy="585.5" r="8" fill="#ffffff"/>
+  <text x="72" y="592" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="800">日间/夜间</text>
+  <text x="363" y="592" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="15" font-weight="800">x  退出</text>
+
+  <rect x="411" y="255" width="7" height="120" rx="4" fill="#6f7c92" opacity=".65"/>
+</svg>
