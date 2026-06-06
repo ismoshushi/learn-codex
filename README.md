@@ -15,7 +15,7 @@
 
 </div>
 
-![Learn Codex hero](./public/images/codex-article-hero.svg)
+![Learn Codex 首页预览](./public/images/readme/learn-codex-home.png)
 
 ## 这是什么
 
