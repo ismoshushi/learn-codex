@@ -7,7 +7,14 @@ type NavItem = {
   external?: boolean;
 };
 
-const extraNavItems: NavItem[] = [{ href: "/hot", label: "热门项目" }];
+const extraNavItems: NavItem[] = [
+  { href: "/hot", label: "热门项目" },
+  {
+    href: "https://github.com/ismoshushi/learn-codex",
+    label: "GitHub 开源",
+    external: true,
+  },
+];
 
 export function SiteHeader() {
   const navItems: NavItem[] = [
@@ -30,8 +37,8 @@ export function SiteHeader() {
 
         <nav className="flex flex-wrap items-center justify-end gap-3 text-sm text-slate-300">
           {navItems.map((item) => {
-            const isPrimary = Boolean(item.external);
-            const label = item.external ? "体验 Codex" : item.label;
+            const isPrimary = item.href === "#";
+            const label = item.href === "#" ? "体验 Codex" : item.label;
 
             return (
               <Link
