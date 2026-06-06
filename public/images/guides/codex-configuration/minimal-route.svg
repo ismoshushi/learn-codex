@@ -1,0 +1,36 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#F8FAFC"/>
+  <rect x="90" y="90" width="1220" height="720" rx="34" fill="#0B1120"/>
+  <text x="150" y="166" fill="#FED7AA" font-family="Arial, sans-serif" font-size="24" font-weight="700">MINIMAL SETUP ROUTE</text>
+  <text x="150" y="215" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="800">最小配置路线：先跑通，再增强</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="150" y="315" width="260" height="240" rx="28" fill="#162033" stroke="#334155" stroke-width="2"/>
+    <circle cx="206" cy="371" r="31" fill="#FB923C"/>
+    <text x="197" y="383" fill="#111827" font-size="30" font-weight="800">1</text>
+    <text x="190" y="445" fill="#FFFFFF" font-size="30" font-weight="800">确认登录</text>
+    <text x="190" y="493" fill="#CBD5E1" font-size="22">账号可用，能进入</text>
+    <text x="190" y="529" fill="#CBD5E1" font-size="22">一个真实项目。</text>
+  </g>
+  <path d="M430 435H520" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M502 417L520 435L502 453" stroke="#64748B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="545" y="315" width="260" height="240" rx="28" fill="#162033" stroke="#334155" stroke-width="2"/>
+    <circle cx="601" cy="371" r="31" fill="#38BDF8"/>
+    <text x="592" y="383" fill="#082F49" font-size="30" font-weight="800">2</text>
+    <text x="585" y="445" fill="#FFFFFF" font-size="30" font-weight="800">做小任务</text>
+    <text x="585" y="493" fill="#CBD5E1" font-size="22">改文案、补文章、</text>
+    <text x="585" y="529" fill="#CBD5E1" font-size="22">跑一次验证。</text>
+  </g>
+  <path d="M825 435H915" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M897 417L915 435L897 453" stroke="#64748B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="940" y="315" width="260" height="240" rx="28" fill="#162033" stroke="#334155" stroke-width="2"/>
+    <circle cx="996" cy="371" r="31" fill="#A3E635"/>
+    <text x="987" y="383" fill="#1A2E05" font-size="30" font-weight="800">3</text>
+    <text x="980" y="445" fill="#FFFFFF" font-size="30" font-weight="800">按卡点配置</text>
+    <text x="980" y="493" fill="#CBD5E1" font-size="22">缺什么补什么，</text>
+    <text x="980" y="529" fill="#CBD5E1" font-size="22">一次只调一项。</text>
+  </g>
+  <rect x="150" y="638" width="1050" height="72" rx="22" fill="#F97316" fill-opacity="0.12" stroke="#FB923C" stroke-opacity="0.45"/>
+  <text x="190" y="684" fill="#FED7AA" font-family="Arial, sans-serif" font-size="24" font-weight="700">核心判断：配置要服务真实工作流，不要为了“看起来高级”提前打开所有能力。</text>
+</svg>

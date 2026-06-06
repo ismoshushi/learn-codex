@@ -1079,22 +1079,98 @@ const guideItems: Guide[] = [
       },
     ],
   },
+  {
+    slug: "codex-configuration-guide",
+    title: "Codex 配置与扩展总览：从会用到会配置",
+    description:
+      "根据 CodexGuide 配置文章整理，讲清 Codex 的配置层次、最小上手路线、常见误区和长期使用时应该关注的扩展能力。",
+    category: "基础",
+    readingTime: "8 分钟",
+    publishedAt: "2026-06-06",
+    sections: [
+      {
+        title: "先会用，再会配置",
+        body: [
+          "很多新手一开始就想把模型、权限、插件、MCP 和自动化全部调好，结果反而不知道哪里出了问题。更稳的路线是先把 Codex 当成一个可执行的工作台，确认它能读项目、理解目标、修改文件并完成验证，然后再逐步打开配置项。",
+          "配置的价值不是堆满开关，而是让 Codex 更贴近你的真实工作流。你要先知道自己需要它处理什么任务，再决定要不要调整模型、权限、插件、连接器或项目边界。",
+        ],
+      },
+      {
+        title: "四层配置地图",
+        body: [
+          "第一层是账号与模型。它决定你能使用哪些能力、响应速度、上下文强度和成本倾向。普通文案、小改动可以用更轻的模型，复杂排错、跨文件修改和架构分析更适合更强的模型。",
+          "第二层是项目与权限。Codex 是否能读写当前目录、是否能运行命令、是否需要你批准关键动作，都会直接影响任务能不能落地。遇到它不动文件、不跑命令时，先检查项目和权限，而不是马上怀疑提示词。",
+          "第三层是工具与插件。浏览器、文档、表格、演示文稿、图片生成、Chrome 等能力，会决定 Codex 能接触哪些额外工作现场。前端项目尤其建议让它打开本地页面做实际检查。",
+          "第四层是 MCP、连接器和自动化。它们更像长期工作流的扩展层，适合在你已经熟悉基础项目协作后再使用。新手不需要第一天就深入这些概念。",
+        ],
+        image: {
+          src: "/images/guides/codex-configuration/configuration-map.svg",
+          alt: "Codex 四层配置地图信息图",
+          caption:
+            "把 Codex 配置拆成四层：账号与模型、项目与权限、工具与插件、长期扩展层。先确认基础可用，再逐层增强。",
+        },
+      },
+      {
+        title: "推荐的最小配置路线",
+        body: [
+          "第一步，确认账号能正常登录，Codex 能进入一个真实项目。不要拿空目录练手，真实项目能提供结构、依赖和上下文，结果会更稳定。",
+          "第二步，做一个低风险小任务，比如补 README、改一段文案、添加一篇文章或修复一个简单样式问题。要求 Codex 先读结构，再修改文件，最后运行构建或手动检查页面。",
+          "第三步，根据实际卡点调整配置。如果它读不到文件，检查项目边界；如果它不能执行命令，检查权限；如果页面修改无法确认，启用浏览器检查；如果任务复杂度变高，再考虑切换更强模型。",
+        ],
+        steps: [
+          "先跑通登录、项目读取和一次小修改。",
+          "要求每次任务都有明确目标、范围、限制和验收方式。",
+          "只在遇到真实需要时增加插件、连接器或 MCP。",
+          "重要修改后看 diff、跑构建，并保留人工复核。",
+        ],
+        image: {
+          src: "/images/guides/codex-configuration/minimal-route.svg",
+          alt: "Codex 最小配置路线信息图",
+          caption:
+            "最小路线不是一次性调完所有选项，而是先登录、进真实项目、完成一个低风险小任务，再根据卡点补配置。",
+        },
+      },
+      {
+        title: "配置时最容易踩的坑",
+        body: [
+          "第一个坑是把配置当成万能解法。Codex 结果不稳定时，很多时候不是模型或插件问题，而是任务描述太宽、边界不清、验收标准缺失。",
+          "第二个坑是一次改太多。模型、权限、API、插件、自动化同时调整时，出问题很难定位。更好的方式是一次只改一个变量，确认稳定后再继续扩展。",
+          "第三个坑是不做验证。配置成功不代表任务结果可信。对代码项目来说，构建、测试、本地页面预览和 diff 复核仍然是必要环节。",
+        ],
+      },
+      {
+        title: "什么时候需要高级扩展",
+        body: [
+          "当你已经能稳定完成项目内任务后，再考虑更高阶的配置：用浏览器验证前端交互，用文档或表格插件处理办公文件，用连接器访问外部服务，用 MCP 接入团队内部工具。",
+          "自动化适合重复检查、周期总结和监控类任务，不适合模糊的大目标。比如“每天早上检查项目构建状态并总结失败原因”比“以后帮我维护项目”可靠得多。",
+          "长期使用时，最重要的不是把所有能力打开，而是形成稳定节奏：先说明目标和边界，再让 Codex 读上下文并执行，最后用构建、页面、diff 或人工检查来验收。",
+        ],
+        image: {
+          src: "/images/guides/codex-configuration/extension-decision.svg",
+          alt: "Codex 高级扩展使用判断信息图",
+          caption:
+            "高级扩展要服务明确场景：浏览器用于可视化验收，文件类插件处理格式化产物，连接器和 MCP 用于长期工作流。",
+        },
+      },
+    ],
+  },
 ];
 
 const guideLearningOrder = [
   "what-is-codex",
   "codex-desktop-app-installation",
-  "getting-started",
-  "codex-toolkit-api-history-sync",
   "codex-app-x-article-yichen",
+  "getting-started",
+  "codex-configuration-guide",
+  "codex-toolkit-api-history-sync",
   "most-useful-slash-commands",
   "built-in-commands",
   "prompting-for-code",
   "codex-with-nextjs",
+  "build-learn-codex-site",
   "debugging-with-codex",
   "code-review-workflow",
   "best-practices",
-  "build-learn-codex-site",
   "common-errors",
 ];
 

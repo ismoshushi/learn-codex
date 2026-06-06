@@ -1,0 +1,34 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#F8FAFC"/>
+  <rect x="86" y="82" width="1228" height="736" rx="36" fill="#111827"/>
+  <text x="146" y="154" fill="#FDBA74" font-family="Arial, sans-serif" font-size="24" font-weight="700">EXTENSION DECISION</text>
+  <text x="146" y="205" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="800">什么时候需要高级扩展？</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="146" y="292" width="330" height="344" rx="28" fill="#1F2937" stroke="#374151" stroke-width="2"/>
+    <text x="190" y="356" fill="#FFFFFF" font-size="30" font-weight="800">浏览器检查</text>
+    <text x="190" y="416" fill="#CBD5E1" font-size="22">当前端页面需要确认</text>
+    <text x="190" y="452" fill="#CBD5E1" font-size="22">布局、点击、跳转、</text>
+    <text x="190" y="488" fill="#CBD5E1" font-size="22">表单或交互时使用。</text>
+    <rect x="190" y="548" width="202" height="46" rx="23" fill="#38BDF8" fill-opacity="0.16"/>
+    <text x="222" y="578" fill="#BAE6FD" font-size="20" font-weight="700">适合可视化验收</text>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <rect x="536" y="292" width="330" height="344" rx="28" fill="#1F2937" stroke="#374151" stroke-width="2"/>
+    <text x="580" y="356" fill="#FFFFFF" font-size="30" font-weight="800">文件类插件</text>
+    <text x="580" y="416" fill="#CBD5E1" font-size="22">当任务涉及文档、</text>
+    <text x="580" y="452" fill="#CBD5E1" font-size="22">表格、PPT、图片时，</text>
+    <text x="580" y="488" fill="#CBD5E1" font-size="22">使用专门能力处理。</text>
+    <rect x="580" y="548" width="202" height="46" rx="23" fill="#A3E635" fill-opacity="0.16"/>
+    <text x="612" y="578" fill="#D9F99D" font-size="20" font-weight="700">适合格式化产物</text>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <rect x="926" y="292" width="330" height="344" rx="28" fill="#1F2937" stroke="#374151" stroke-width="2"/>
+    <text x="970" y="356" fill="#FFFFFF" font-size="30" font-weight="800">连接器与 MCP</text>
+    <text x="970" y="416" fill="#CBD5E1" font-size="22">当团队工具、外部服务</text>
+    <text x="970" y="452" fill="#CBD5E1" font-size="22">或长期自动化需要接入</text>
+    <text x="970" y="488" fill="#CBD5E1" font-size="22">时再逐步配置。</text>
+    <rect x="970" y="548" width="202" height="46" rx="23" fill="#C084FC" fill-opacity="0.16"/>
+    <text x="1002" y="578" fill="#E9D5FF" font-size="20" font-weight="700">适合长期工作流</text>
+  </g>
+  <text x="146" y="726" fill="#94A3B8" font-family="Arial, sans-serif" font-size="24">判断标准：基础项目任务已经稳定，再为明确场景增加高级能力。</text>
+</svg>

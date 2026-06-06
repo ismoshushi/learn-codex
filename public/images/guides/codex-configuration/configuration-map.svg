@@ -1,0 +1,51 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#F8FAFC"/>
+  <rect x="80" y="76" width="1240" height="748" rx="36" fill="#0F172A"/>
+  <rect x="132" y="130" width="1136" height="92" rx="22" fill="#1E293B"/>
+  <text x="172" y="169" fill="#FDBA74" font-family="Arial, sans-serif" font-size="22" font-weight="700">CODEX CONFIGURATION MAP</text>
+  <text x="172" y="202" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="34" font-weight="700">四层配置地图</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="132" y="278" width="254" height="392" rx="26" fill="#172033" stroke="#334155" stroke-width="2"/>
+    <circle cx="186" cy="334" r="28" fill="#FB923C"/>
+    <text x="177" y="344" fill="#111827" font-size="28" font-weight="800">1</text>
+    <text x="164" y="402" fill="#FFFFFF" font-size="30" font-weight="800">账号与模型</text>
+    <text x="164" y="462" fill="#CBD5E1" font-size="22">决定可用能力、速度、</text>
+    <text x="164" y="498" fill="#CBD5E1" font-size="22">上下文强度和成本倾向。</text>
+    <rect x="164" y="566" width="154" height="42" rx="21" fill="#FB923C" fill-opacity="0.16"/>
+    <text x="190" y="594" fill="#FED7AA" font-size="20" font-weight="700">先确认账号</text>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <rect x="426" y="278" width="254" height="392" rx="26" fill="#172033" stroke="#334155" stroke-width="2"/>
+    <circle cx="480" cy="334" r="28" fill="#38BDF8"/>
+    <text x="471" y="344" fill="#082F49" font-size="28" font-weight="800">2</text>
+    <text x="458" y="402" fill="#FFFFFF" font-size="30" font-weight="800">项目与权限</text>
+    <text x="458" y="462" fill="#CBD5E1" font-size="22">决定是否能读写文件、</text>
+    <text x="458" y="498" fill="#CBD5E1" font-size="22">运行命令和执行动作。</text>
+    <rect x="458" y="566" width="154" height="42" rx="21" fill="#38BDF8" fill-opacity="0.16"/>
+    <text x="484" y="594" fill="#BAE6FD" font-size="20" font-weight="700">再看边界</text>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <rect x="720" y="278" width="254" height="392" rx="26" fill="#172033" stroke="#334155" stroke-width="2"/>
+    <circle cx="774" cy="334" r="28" fill="#A3E635"/>
+    <text x="765" y="344" fill="#1A2E05" font-size="28" font-weight="800">3</text>
+    <text x="752" y="402" fill="#FFFFFF" font-size="30" font-weight="800">工具与插件</text>
+    <text x="752" y="462" fill="#CBD5E1" font-size="22">浏览器、文档、表格、</text>
+    <text x="752" y="498" fill="#CBD5E1" font-size="22">图片等能力按需开启。</text>
+    <rect x="752" y="566" width="154" height="42" rx="21" fill="#A3E635" fill-opacity="0.16"/>
+    <text x="778" y="594" fill="#D9F99D" font-size="20" font-weight="700">按需扩展</text>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <rect x="1014" y="278" width="254" height="392" rx="26" fill="#172033" stroke="#334155" stroke-width="2"/>
+    <circle cx="1068" cy="334" r="28" fill="#C084FC"/>
+    <text x="1059" y="344" fill="#2E1065" font-size="28" font-weight="800">4</text>
+    <text x="1046" y="402" fill="#FFFFFF" font-size="30" font-weight="800">长期扩展层</text>
+    <text x="1046" y="462" fill="#CBD5E1" font-size="22">MCP、连接器、自动化，</text>
+    <text x="1046" y="498" fill="#CBD5E1" font-size="22">适合稳定后再接入。</text>
+    <rect x="1046" y="566" width="154" height="42" rx="21" fill="#C084FC" fill-opacity="0.16"/>
+    <text x="1072" y="594" fill="#E9D5FF" font-size="20" font-weight="700">最后加深</text>
+  </g>
+  <path d="M386 474H426" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M680 474H720" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M974 474H1014" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+  <text x="172" y="750" fill="#94A3B8" font-family="Arial, sans-serif" font-size="24">建议顺序：先确认基础可用，再根据真实卡点逐层增加配置。</text>
+</svg>
