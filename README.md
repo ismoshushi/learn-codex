@@ -216,7 +216,13 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 
 ## 赞助商
 
-想出现在这里？添加微信时请备注你的产品名和项目赞助说明。
+Learn Codex 会持续整理 Codex 中文教程、实战案例和工具资料。如果这个项目帮你节省了时间，欢迎通过赞赏码支持维护；如果你希望产品、工具或开源项目出现在这里，添加微信时请备注「产品名 + 项目赞助说明」，我会尽快与你确认展示方式。
+
+| 微信联系 | 赞赏支持 |
+| --- | --- |
+| <img src="./public/images/readme/wechat-contact.png" alt="微信联系二维码" width="220" /> | <img src="./public/images/readme/wechat-reward.jpg" alt="赞赏码" width="220" /> |
+
+> 扫码添加微信可沟通赞助展示、内容合作或教程共建；扫码赞赏则会直接用于项目内容更新与维护。
 
 | 赞助商 | 产品 / 项目 | 说明 |
 | --- | --- | --- |
